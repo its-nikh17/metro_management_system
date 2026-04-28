@@ -79,4 +79,28 @@ To get a local copy up and running, follow these steps:
    npm start
 5. **Access the application:**
    Open your web browser and go to http://localhost:3000 to view the application.
+
+## Vercel Deployment
+
+This project is organized for Vercel as:
+
+- `client/` -> React frontend (static build)
+- `server/vercel.js` -> Express API serverless entrypoint
+- `vercel.json` -> build and routing configuration
+
+### Environment Variables
+
+Set this variable in your Vercel project settings:
+
+- `MONGO_URI`: your production MongoDB connection string
+
+### Deploy Steps
+
+1. Push this repository to GitHub.
+2. Import the repository in Vercel.
+3. Keep the project root as the repository root.
+4. Add `MONGO_URI` in Vercel Environment Variables.
+5. Deploy.
+
+API routes are available under `/api/*` in production, and the frontend is served from the same domain.
    
