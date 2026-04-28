@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>METRO VIRTUAL TICKETS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: sans-serif;
+      background-image: url('./bg.png');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      position: relative;
+    }
+
+    .header-container {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 12px;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: left;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 1.5cm; /* Adjusted top position */
+      left: 0;
+      width: 100%; /* Extend to the rightmost end */
+    }
+
+    .header-text {
+      font-size: 24px;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin-top: 10px; /* Adjusted margin-top */
+    }
+
+    .content-container {
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .content {
+      width: 30%;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 24px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .content:nth-child(1),
+    .content:nth-child(2),
+    .content:nth-child(3) {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .header {
+      font-size: 18px;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      font-size: 16px;
+    }
+
+    .image-container {
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .content a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header-container">
+    <div class="header-text">
+      <b>WELCOME JOHN DOE!</b>
+    </div>
+  </div>
+
+  <div class="content-container">
+    <div class="content">
+      <div class="image-container">
+        <img src="ticket.png" alt="ticket">
+      </div>
+      <div class="header">
+      </div>
+      <a href="viewticket.html">VIEW TICKETS</a>
+    </div>
+
+    <div class="content">
+      <div class="image-container">
+        <img src="booking.png" alt="booking">
+      </div>
+      <div class="header">
+      </div>
+      <a href="ticketbook.html">BOOK TICKETS</a>
+    </div>
+
+    <div class="content">
+      <div class="image-container">
+        <img src="timing.jpeg" alt="metrotime">
+      </div>
+      <div class="header">
+        <a href="timings.html">METRO TIMINGS</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

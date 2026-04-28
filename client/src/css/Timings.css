@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../../public/images/bg.png');
+    background-size: cover;
+    background-position: top;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 50px; /* Adjust the margin to move the heading down */
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px; /* Adjust the margin to move the container down */
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the last value for the transparency level (0 to 1) */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: white; /* Set the text color to white */
+}
+
+.container h1 {
+    margin-bottom: 20px; /* Add some margin to separate the heading from the images */
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Add some margin between the images */
+}

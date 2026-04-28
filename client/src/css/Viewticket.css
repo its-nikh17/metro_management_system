@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    background-image: url('../../public/images/bg.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Aligns containers vertically */
+  }
+
+  .content-container {
+    /* Your existing styles for container */
+    display: flex;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin-bottom: 20px; /* Space between containers */
+  }
+
+  .header {
+    /* Your existing styles for header */
+    text-align: left; /* Align heading left */
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 20px 0;
+    flex: 1;
+  }
+
+  .user-input-container {
+    /* Your existing styles for user input container */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-top: -0.5cm;
+  }
+
+  .square-container {
+    /* Your modified styles for square container */
+    flex: 0.5; /* Reduce size */
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    margin-left: 20px;
+    padding: 10px; /* Adjusted padding */
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: left; /* Align text to the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .square-container img {
+    /* Your existing styles for image */
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+  }
+
+  /* New CSS for moving the second metro ticket container downwards */
+  .metro-ticket-container {
+    order: 3; /* Change the order to position it after other elements */
+  }

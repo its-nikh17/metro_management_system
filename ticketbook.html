@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TICKET BOOKING</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: sans-serif;
+      background-image: url('./bg.png');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .content-container {
+      display: flex;
+      width: 80%;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 24px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      color: white;
+    }
+
+    .header {
+      text-align: center;
+      font-size: 36px;
+      font-family: 'Poppins', sans-serif;
+      margin: 10px 20px 0;
+      flex: 1;
+    }
+
+    .user-input-container {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      margin-top: -0.5cm;
+    }
+
+    ::placeholder {
+      color: white;
+    }
+
+    .user-input-container input {
+      width: 60%;
+      margin-bottom: 10px;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 24px;
+      color: white;
+      background-color: grey;
+    }
+
+    .user-input-container button {
+      width: 160px;
+      background-color: #000;
+      color: white;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .square-container {
+      flex: 1;
+      border: 1px solid #ccc;
+      border-radius: 16px;
+      margin-left: 20px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.3);
+      text-align: center;
+    }
+
+    .square-container img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content-container">
+    <div class="header">
+      <b>TICKET BOOKING</b>
+    </div>
+
+    <div class="user-input-container">
+      <input type="text" list="startRoutes" name="startRoute" placeholder="Start route">
+      
+      <datalist id="startRoutes">
+        <option value="Ambattukavu">Ambattukavu</option>
+        <option value="Aluva">Aluva</option>
+        <option value="Cochin university">Cochin university</option>
+        <option value="Changampuzha park">Changampuzha park</option>
+        <option value="Companypady">Companypady</option>
+        <option value="Edapally">Edapally</option>
+        <option value="Elamkulam">Elamkulam</option>
+        <option value="Ernakulum south">Ernakulum south</option>
+        <option value="Kadavanthara">Kadavanthara</option>
+        <option value="Kalamassery">Kalamassery</option>
+        <option value="Kaloor">Kaloor</option>
+        <option value="jln stadium">JLN Stadium</option>
+        <option value="muttom">Muttom</option>
+        <option value="MGroad">MG road</option>
+        <option value="Palarivattom">Palarivattom</option>
+        <option value="Pathadipalam">Pathadipalam</option>
+        <option value="Pulinchodu">Pulinchodu</option>
+        <option value="Town hall">Town hall</option>
+        <option value="Vyttila">Vyttila</option>
+        <option value="SN Junction">SN Junction</option>
+        <option value="Thaikoodam">Thaikoodam</option>
+        <option value="Thrippunithara terminal">Thrippunithara terminal</option>
+        <option value="Vadakkekotta">Vadakkekotta</option>
+      </datalist>
+
+      <input type="text" list="endRoutes" name="endRoute" placeholder="End Route">
+      <datalist id="endRoutes">
+        <option value="Ambattukavu">Ambattukavu</option>
+        <option value="Aluva">Aluva</option>
+        <option value="Cochin university">Cochin university</option>
+        <option value="Changampuzha park">Changampuzha park</option>
+        <option value="Companypady">Companypady</option>
+        <option value="Edapally">Edapally</option>
+        <option value="Elamkulam">Elamkulam</option>
+        <option value="Ernakulum south">Ernakulum south</option>
+        <option value="Kadavanthara">Kadavanthara</option>
+        <option value="Kalamassery">Kalamassery</option>
+        <option value="Kaloor">Kaloor</option>
+        <option value="jln stadium">JLN Stadium</option>
+        <option value="muttom">Muttom</option>
+        <option value="MGroad">MG road</option>
+        <option value="Palarivattom">Palarivattom</option>
+        <option value="Pathadipalam">Pathadipalam</option>
+        <option value="Pulinchodu">Pulinchodu</option>
+        <option value="Town hall">Town hall</option>
+        <option value="Vyttila">Vyttila</option>
+        <option value="SN Junction">S N Junction</option>
+        <option value="Thaikoodam">Thaikoodam</option>
+        <option value="Thrippunithara terminal">Thrippunithara terminal</option>
+        <option value="Vadakkekotta">Vadakkekotta</option>
+      </datalist>
+
+      <input type="number" name="ticketQuantity" placeholder="Number of Tickets" min="1" max="30">
+      <a href="payment.html">
+        <button type="submit">Generate Ticket</button>
+      </a>
+    </div>
+
+    <div class="square-container">
+      <img src="metropic.jpeg" alt="Metro Pic">
+    </div>
+  </div>
+</body>
+</html>
