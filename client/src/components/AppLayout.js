@@ -6,6 +6,7 @@ const linkItems = [
   { to: "/mvt", label: "Dashboard", private: true },
   { to: "/book", label: "Book Ticket", private: true },
   { to: "/history", label: "History", private: true },
+  { to: "/shortest-path", label: "Shortest Path", public: true },
   { to: "/timing", label: "Timings", public: true },
   { to: "/contact", label: "Contact", public: true },
 ];

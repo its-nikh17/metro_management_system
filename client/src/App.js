@@ -16,6 +16,7 @@ import Contact from "./pages/Contact";
 import BookingHistory from "./pages/BookingHistory";
 import Profile from "./pages/Profile";
 import AdminPanel from "./pages/AdminPanel";
+import ShortestPathFinder from "./pages/ShortestPathFinder";
 
 const router = createBrowserRouter([
   {
@@ -100,6 +101,7 @@ const router = createBrowserRouter([
           </AdminRoute>
         ),
       },
+      { path: "shortest-path", element: <ShortestPathFinder /> },
     ],
   },
 ]);

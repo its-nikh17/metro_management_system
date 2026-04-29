@@ -29,7 +29,7 @@ Thumbs.db
 coverage/
 
 # MongoDB local files (if any)
-/data/
+data/
 *.db
 
 # Temporary files

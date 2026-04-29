@@ -210,3 +210,38 @@ a {
   height: 72px;
   object-fit: contain;
 }
+
+/* Better-looking Leaflet station markers */
+.station-marker {
+  background: transparent;
+  border: none;
+}
+
+.station-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  border: 2px solid var(--border);
+  background: var(--muted);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.station-dot--base {
+  background: rgba(154, 167, 205, 0.35);
+  border-color: var(--muted);
+}
+
+.station-dot--route {
+  background: var(--primary-soft);
+  border-color: var(--primary);
+}
+
+.station-dot--start {
+  background: var(--success);
+  border-color: rgba(43, 196, 75, 0.9);
+}
+
+.station-dot--end {
+  background: var(--danger);
+  border-color: rgba(255, 108, 108, 0.9);
+}
